@@ -1,0 +1,111 @@
+<!--
+  This is the Welcome Page.
+-->
+
+
+<html>
+
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SLACK TRACK</title>
+
+<style>
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+</style>
+
+</head>
+
+
+
+
+
+
+
+<body background="image/WelcomePage.jpg"
+style=" background-repeat:no-repeat ;
+background-size:100% 100%;
+background-attachment: fixed;"
+>
+
+
+  <div class = "topleft">
+<img width= 50% src="image/LOGO.svg" alt="LOGO">
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1 align="center"  style="font-family:Trebuchet MS; 
+color:White; font-size:80px"> SLACK TRACK </h1>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div align = "center">
+        <select id= "myMajor" style= "width:17%;" >
+          <option value="NNN" disabled selected>Select your major</option>
+          <option value="CIS">CIS</option>
+          <option value="Music">Music</option>
+          <option value="Philosophy">Philosophy</option>
+          <option value="Economic">Economic</option>
+        </select>
+</div>
+
+<br>
+
+<div align="center">
+
+<input class="SubmitButton" 
+type="button" 
+value="START!" 
+style="border-radius: 5px;
+                  border: None;
+                  font-family:Trebuchet MS; 
+                  height:35px;width:207px; 
+                  font-size:23px;
+                  color: rgb(255, 255, 255);
+                  background: rgb(188, 64, 32)"
+
+onclick="showPage()"  
+style="font-size:20px; " />
+
+</div>
+
+
+
+<script>
+function showPage() {
+  var select = document.getElementById('myMajor');
+  var major_option = select.options[select.selectedIndex].value;
+  if (major_option != 'NNN'){
+    window.open("./HTML/"+major_option + ".html");
+  }
+}
+
+
+</script>
+    
+</body>
+
+
+</html>
