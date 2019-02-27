@@ -11,6 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SLACK TRACK</title>
+<!-- <link rel="stylesheet" type="text/css" href="./CSS/Welcome.css"> -->
 
 <style>
 
@@ -19,13 +20,36 @@
   top: 8px;
   left: 16px;
 }
+
+select {
+  /* margin: 50px; */
+  width: 150px;
+  padding: 5px 5px 5px 5px;
+  font-size: 16px;
+  border: 1px solid white;
+  font-family:Trebuchet MS;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("./image/arrow.png") 96% / 5.5% no-repeat white;
+}
+
+p {
+  border: 0px solid rgb(137, 33, 240);
+  border-radius: 6px;
+  background-color: rgb(83, 96, 102);
+  width: 50%;
+  padding: 5px;
+
+}
+
+
+
+
 </style>
 
 </head>
-
-
-
-
 
 
 
@@ -44,25 +68,28 @@ background-attachment: fixed;"
 <br>
 <br>
 <br>
+
+
+
+<div align="center">
+    <p align="center"  style="font-family:Trebuchet MS; 
+    color:white; font-size:80px"> SLACK TRACK </p>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
-<h1 align="center"  style="font-family:Trebuchet MS; 
-color:White; font-size:80px"> SLACK TRACK </h1>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 
-<div align = "center">
-        <select id= "myMajor" style= "width:17%;" >
+<div align = "center" >
+        <select id= "myMajor" style= "width:20%;" >
           <option value="NNN" disabled selected>Select your major</option>
           <option value="CIS">CIS</option>
           <option value="Music">Music</option>
@@ -71,23 +98,25 @@ color:White; font-size:80px"> SLACK TRACK </h1>
         </select>
 </div>
 
+
+
 <br>
 
 <div align="center">
 
 <input class="SubmitButton" 
 type="button" 
-value="START!" 
+value="Start!" 
 style="border-radius: 5px;
                   border: None;
                   font-family:Trebuchet MS; 
-                  height:35px;width:207px; 
+                  height:35px;width:20%; 
                   font-size:23px;
                   color: rgb(255, 255, 255);
-                  background: rgb(188, 64, 32)"
+                  background: rgb(83, 96, 102)"
 
 onclick="showPage()"  
-style="font-size:20px; " />
+style="font-size:20px; "/>
 
 </div>
 
@@ -103,8 +132,8 @@ function showPage() {
 }
 
 
-</script>
-    
+
+</script> 
 </body>
 
 
