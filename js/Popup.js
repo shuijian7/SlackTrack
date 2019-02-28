@@ -10,11 +10,13 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
+  document.body.style.overflow = 'hidden'
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+  document.body.style.overflow = 'scroll'
 }
 
 
@@ -23,7 +25,7 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
-    document.body.style.overflow = 'hidden'
+    document.body.style.overflow = 'scroll'
   }
 }
 
