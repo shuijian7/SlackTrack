@@ -54,17 +54,19 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 			<span class="close">&times;</span>
 			<p style="color: white">Hello CIS 122!</p>
 			<select id= "myMajor" style= "width:30%;" >
-				<option value="NNN" disabled selected>Select  professor</option>
-				<option value="Hank">Hank Childs</option>
-				<option value="Lei">Lei Jiao</option>
-				<option value="Anthony">Anthony Hornof</option>
-				<option value="Joe">Joe Sventek</option>
+				<option value='NNN' disabled selected>Select  professor</option>
+				<option value='Hank'>Hank Childs</option>
+				<option value='Lei'>Lei Jiao</option>
+				<option value='Anthony'>Anthony Hornof</option>
+				<option value='Joe'>Joe Sventek</option>
 			</select>
 			<br>
 			<br>
 			<br>
+			<canvas id="my_canvas" width= "1000"    style="border:2px solid #ffffff; height: 200px; border-radius: 6px; "></canvas>
+			<!-- <div id="chartContainer" style="height: 370px; width: 100%;"></div> -->
 			<br>
-			<br>
+			<!-- <canvas id="a_canvas" width="1000" height="700"></canvas> -->
 			<br>
 			<br>
 			<br>
@@ -89,7 +91,7 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 		
 
 		<!-- BS First Year Table -->
-		<table class="greenTable" >
+		<table id="s1" class="greenTable" >
 			<thead>
 				<tr>
 				<th>First Year</th>
@@ -114,7 +116,7 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 			<td>4</td>
 			</tr>
 			<tr>
-			<td style="text-align:left">Math 112</td>
+			<td role="button" id="myBtn3" class="u" style="text-align:left; cursor: pointer">Math 112</td>
 			<td style="text-align:left">Elementary Functions</td>
 			<td></td>
 			<td>4</td>
@@ -228,7 +230,7 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 
 
 		<!-- BS Second Year Table -->
-		<table class="greenTable">
+		<table id="s2" class="greenTable">
 				<thead>
 				<tr>
 				<th>Second Year</th>
@@ -376,7 +378,7 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 
 		<br>
 		<!-- BS Third Year Table -->
-		<table class="greenTable">
+		<table id="s3" class="greenTable">
 				<thead>
 				<tr>
 				<th>Third Year</th>
@@ -509,7 +511,7 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 
 		<br>
 		<!-- BS Forth Year Table-->
-		<table class="greenTable">
+		<table id="s4" class="greenTable">
 				<thead>
 				<tr>
 				<th>Forth Year</th>
@@ -622,7 +624,7 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 		<h3 style="text-align:center">Bachelor of Arts in Computer and Information Science</h3>
 
 		<!-- BA First Year Table -->
-		<table class="greenTable">
+		<table id="a1" class="greenTable">
 				<thead>
 					<tr>
 					<th>First Year</th>
@@ -757,7 +759,7 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 	
 		<br>
 		<!-- BA Second Year Table -->
-		<table class="greenTable">
+		<table id="a2" class="greenTable">
 				<thead>
 				<tr>
 				<th>Second Year</th>
@@ -907,7 +909,7 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 
 		<br>
 		<!-- BA Third Year Table -->
-		<table class="greenTable">
+		<table id="a3" class="greenTable">
 				<thead>
 				<tr>
 				<th>Third Year</th>
@@ -1046,7 +1048,7 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 
 		<br>
 		<!-- BA Forth Year Table-->
-		<table class="greenTable">
+		<table id="a4" class="greenTable">
 				<thead>
 				<tr>
 				<th>Forth Year</th>
@@ -1173,9 +1175,19 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 				<script type="text/javascript" src="../js/Popup.js"></script>
 				<!-- <script src="http://code.jquery.com/jquery-1.10.2.js"></script> -->
 				<!-- <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
+				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 				<button onclick="topFunction()" id="myBtn2" title="Go to top">Top</button>
+				<button onclick="Function1()" id="Btn1y" >S1st</button>
+				<button onclick="Function2()" id="Btn2y" >S2nd</button>
+				<button onclick="Function3()" id="Btn3y" >S3rd</button>
+				<button onclick="Function4()" id="Btn4y" >S4th</button>
 
+				<button onclick="Function5()" id="Btn5y" >A1st</button>
+				<button onclick="Function6()" id="Btn6y" >A2nd</button>
+				<button onclick="Function7()" id="Btn7y" >A3rd</button>
+				<button onclick="Function8()" id="Btn8y" >A4th</button>			  
+                
 			
 	</body>
 </html>
