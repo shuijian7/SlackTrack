@@ -1,0 +1,12 @@
+table, td, th {
+  border: 1px solid black;
+  background-color: #f1f1c1;
+}
+table{
+	width: 100%;
+}
+
+td{
+	text-align: center;
+	padding: 15px;
+}
