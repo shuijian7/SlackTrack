@@ -1,0 +1,9 @@
+<?php
+
+$server = "ix.cs.uoregon.edu";
+$dbname ="slacktrack";
+$user = "will";
+$pass = "will";
+$port="3074";
+
+?>

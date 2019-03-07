@@ -9,6 +9,19 @@ whether as a bechelor of Art or a bechelor of Science
 Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 
 
+<?php
+
+include(connectdata.txt);
+
+$db = mysqli_connect($server, $user, $pass , $dbname , $port)
+or die('Error connecting to Mysql server.');
+
+$query = "Select INSTRUCTOR from CIS;";
+
+$result = mysqli_query($db,$query) or die(mysqli_error($db));
+
+
+?>
 
 <html>
 	<head>
@@ -34,8 +47,6 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 
 			
 		</style>
-
-		
 	</head>
     
 	<body>
@@ -58,11 +69,13 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 			<span class="close">&times;</span>
 			<p style="color: white">Hello CIS 122!</p>
 			<select id= "myMajor" style= "width:30%;" >
-				<option value='NNN' disabled selected>Select  professor</option>
-				<option value='Hank'>Hank Childs</option>
-				<option value='Lei'>Lei Jiao</option>
-				<option value='Anthony'>Anthony Hornof</option>
-				<option value='Joe'>Joe Sventek</option>
+			<option value='NNN' disabled selected>Select  professor</option>
+			<?php while($row = mysqli_fetch_array($result)){?>
+				<option value=<?php echo $row[INSTRUCTOR];?><?php echo $row[INSTRUCTOR];?></option>
+			<?php
+			}
+			mysqli_free_result($result);
+			?>
 			</select>
 			<br>
 			<br>
@@ -1191,14 +1204,37 @@ Last Updated: Jarvis Dong Feb 25th 9:14 AM -->
 				<button onclick="Function5()" id="Btn5y" >A1st</button>
 				<button onclick="Function6()" id="Btn6y" >A2nd</button>
 				<button onclick="Function7()" id="Btn7y" >A3rd</button>
-				<button onclick="Function8()" id="Btn8y" >A4th</button>	
+				<button onclick="Function8()" id="Btn8y" >A4th</button>		
 
-				
-				
+				<script>
+						var modal = document.getElementById('myModal');
+			
+			
+						// Get the button that opens the modal
+						var Btn122 = document.getElementById("Btn122");
+						var Btn210 = document.getElementById("Btn210");
+						
+						
+						// Get the <span> element that closes the modal
+						var span = document.getElementsByClassName("close")[0];
+						
+						// When the user clicks the button, open the modal 
+						Btn122.onclick = function() {
+						modal.style.display = "block";
+						document.getElementById('myMajor').innerHTML= "";
+						document.getElementById('myMajor').innerHTML = "<option value='NNN' disabled selected>Select  professor</option>"
+						+ "<option value='Hank'>Hank Childs</option>"
+						+ "<option value='Lei'>Lei Jiao</option>"
+						+ "<option value='Anthony'>Anthony Hornof</option>"
+						+ "<option value='Joe'>Joe Sventek</option>";
+
+						document.body.style.overflow = 'hidden';
+						
+						}
+				</script>
 		
 	</body>
 
-	
 
 
 

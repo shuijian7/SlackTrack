@@ -1,36 +1,91 @@
 
 // Get the modal
-// var modal = document.getElementById('myModal');
+var modal = document.getElementById('myModal');
 
 
-// // Get the button that opens the modal
-// var Btn122 = document.getElementById("Btn122");
+// Get the button that opens the modal
+// var Btn33 = document.getElementById("Btn210");
 // var Btn210 = document.getElementById("Btn210");
+// var Btn212 = document.getElementById("Btn212");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
 
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
 
-// // When the user clicks the button, open the modal 
-// Btn122.onclick = function() {
-//   modal.style.display = "block";
-//   document.getElementById('myMajor').innerHTML= "";
-//   document.getElementById('myMajor').innerHTML = "<option value='NNN' disabled selected>Select  professor</option>"
-//   + "<option value='Hank'>Hank Childs</option>"
-//   + "<option value='Lei'>Lei Jiao</option>"
-//   + "<option value='Anthony'>Anthony Hornof</option>"
-//   + "<option value='Joe'>Joe Sventek</option>";
-//   document.body.style.overflow = 'hidden';
-
-// }
-
-
+// When the user clicks the button, open the modal 
 Btn210.onclick = function() {
+
   modal.style.display = "block";
-  document.getElementById('myMajor').innerHTML= "";
-  document.getElementById('myMajor').innerHTML = "<option value='Hank'>WHAT? Hank Childs</option>";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "Hello!! CIS210";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=210",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+
+Btn211.onclick = function() {
+  modal.style.display = "block";
+  document.getElementById('cid').innerHTML= "Hello!! CIS211";
+
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=211",true);
+        xmlhttp.send();
   document.body.style.overflow = 'hidden'
 }
+
+
+Btn212.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "Hello!! CIS212";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=212",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {

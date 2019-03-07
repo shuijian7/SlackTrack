@@ -6,7 +6,7 @@ This file is meant to embellish tables on CIS.html
 
 Last Updated: Jarvis Dong Feb 25th 9:16 AM */
 
-table tbody tr:hover {background-color:#fee123;} /*indicate the current line your cursor is hovering*/
+
 
 table.greenTable {
     font-family: Arial, serif;
@@ -70,6 +70,7 @@ table.greenTable {
     padding: 2px 8px;
     border-radius: 5px;
   }
-  .u {
-    text-decoration: underline;
+  .u:hover{
+    /* text-decoration: underline; */
+    background-color:#fee123;
   }

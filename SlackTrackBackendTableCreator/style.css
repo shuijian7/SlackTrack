@@ -1,0 +1,15 @@
+table.newtable td, table.newtable th {
+	border: 2px solid white;
+	background-color: #F0F0F0;
+	font-family: Arial, serif;
+			
+	}
+	table.newtable{
+			width: 90%;
+	}
+
+
+/* td{
+	text-align: center;
+	padding: 15px;
+} */
