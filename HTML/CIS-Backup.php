@@ -1206,7 +1206,7 @@ $result = mysqli_query($db,$query) or die(mysqli_error($db));
 				<button onclick="Function7()" id="Btn7y" >A3rd</button>
 				<button onclick="Function8()" id="Btn8y" >A4th</button>		
 
-				<script>
+				<!-- <script>
 						var modal = document.getElementById('myModal');
 			
 			
@@ -1231,7 +1231,7 @@ $result = mysqli_query($db,$query) or die(mysqli_error($db));
 						document.body.style.overflow = 'hidden';
 						
 						}
-				</script>
+				</script> -->
 		
 	</body>
 

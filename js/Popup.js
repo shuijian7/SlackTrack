@@ -3,11 +3,6 @@
 var modal = document.getElementById('myModal');
 
 
-// Get the button that opens the modal
-// var Btn33 = document.getElementById("Btn210");
-// var Btn210 = document.getElementById("Btn210");
-// var Btn212 = document.getElementById("Btn212");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -18,7 +13,7 @@ Btn210.onclick = function() {
 
   modal.style.display = "block";
   // document.getElementById('myMajor').innerHTML= "";
-  document.getElementById('cid').innerHTML= "Hello!! CIS210";
+  document.getElementById('cid').innerHTML= "CIS210";
         if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
@@ -41,7 +36,7 @@ Btn210.onclick = function() {
 
 Btn211.onclick = function() {
   modal.style.display = "block";
-  document.getElementById('cid').innerHTML= "Hello!! CIS211";
+  document.getElementById('cid').innerHTML= "CIS211";
 
         if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -57,6 +52,7 @@ Btn211.onclick = function() {
         };
         xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=211",true);
         xmlhttp.send();
+
   document.body.style.overflow = 'hidden'
 }
 
@@ -65,7 +61,7 @@ Btn212.onclick = function() {
 
   modal.style.display = "block";
   // document.getElementById('myMajor').innerHTML= "";
-  document.getElementById('cid').innerHTML= "Hello!! CIS212";
+  document.getElementById('cid').innerHTML= "CIS212";
         if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
@@ -84,6 +80,183 @@ Btn212.onclick = function() {
   document.body.style.overflow = 'hidden';
 
 }
+
+Btn313.onclick = function() {
+
+    modal.style.display = "block";
+    // document.getElementById('myMajor').innerHTML= "";
+    document.getElementById('cid').innerHTML= "CIS313";
+          if (window.XMLHttpRequest) {
+              // code for IE7+, Firefox, Chrome, Opera, Safari
+              xmlhttp = new XMLHttpRequest();
+          } else {
+              // code for IE6, IE5
+              xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+          }
+          xmlhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                  document.getElementById("txtHint").innerHTML = this.responseText;
+              }
+          };
+          xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=313",true);
+          xmlhttp.send();
+    
+    document.body.style.overflow = 'hidden';
+  
+  }
+  
+
+
+
+Btn314.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "CIS314";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=314",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+
+
+
+Btn315.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "CIS315";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=315",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+Btn330.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "CIS330";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=330",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+Btn415.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "CIS415";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=415",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+Btn422.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "CIS422";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=422",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+
+
+Btn425.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "CIS425";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=425",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
 
 
 
@@ -111,12 +284,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn2").style.display = "block";
-    // document.getElementById("Btn1y").style.display = "block";
+    document.getElementById("myBtntop").style.display = "block";
     
     } else {
-    document.getElementById("myBtn2").style.display = "none";
-    // document.getElementById("Btn1y").style.display = "block";
+    document.getElementById("myBtntop").style.display = "none";
     }
 }
 
@@ -126,30 +297,6 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
     // var elmnt = document.getElementById("123abc");
     // elmnt.scrollIntoView();
-}
-function Function1() {
-  document.getElementById("s1").scrollIntoView();
-}
-function Function2() {
-  document.getElementById("s2").scrollIntoView();
-}
-function Function3() {
-  document.getElementById("s3").scrollIntoView();
-}
-function Function4() {
-  document.getElementById("s4").scrollIntoView();
-}
-function Function5() {
-  document.getElementById("a1").scrollIntoView();
-}
-function Function6() {
-  document.getElementById("a2").scrollIntoView();
-}
-function Function7() {
-  document.getElementById("a3").scrollIntoView();
-}
-function Function8() {
-  document.getElementById("a4").scrollIntoView();
 }
 
 
