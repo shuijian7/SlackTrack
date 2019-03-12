@@ -3,7 +3,9 @@
     This file is written by Shuijian Zhang
     FrameWork is phpunit
 
-    Notice: xml query and composer.json file can't comment since json can't supprt comments and it'll cause error when testing.
+    Notice: 
+    Folder ventor is the framework resource, please ingore it.
+    xml query and composer.json file can't comment since json can't supprt comments and it'll cause error when testing.
     so comments here:
     testsquery is a import query file for getDataSet() function
     composer.json file is a installing version for PHPUnit and DBUnit
