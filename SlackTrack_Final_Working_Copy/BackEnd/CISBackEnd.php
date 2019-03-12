@@ -154,8 +154,8 @@ function percent($number){
                 <td><?php echo escape(percent(round(($value["CP"]+$value["C"]+$value["CM"])/($value["TOT_NON_W"]),2))); ?></td>
                 <td><?php echo escape(percent(round(($value["DP"]+$value["D"]+$value["DM"])/($value["TOT_NON_W"]),2))); ?></td>
                 <td><?php echo escape(percent(round(($value["F"])/($value["TOT_NON_W"]),2))); ?></td>
-                <td><?php echo escape(percent(round(($value["W"])/($value["TOT_NON_W"]),2))); ?></td>
-                <td><?php echo escape($value["W"]+($value["TOT_NON_W"]+$value["TOT_NON_W"])); ?></td>
+                <td><?php echo escape(percent(round(($value["W"])/(($value["W"]+$value["TOT_NON_W"]),2))); ?></td>
+                <td><?php echo escape($value["W"]+$value["TOT_NON_W"]); ?></td>
 
 
             </tr>
