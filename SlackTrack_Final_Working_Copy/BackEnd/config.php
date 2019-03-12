@@ -5,7 +5,7 @@
  */
 
 $host       = "ix.cs.uoregon.edu";
-$port       = "3074";
+$port       = "3088";
 $username   = "tylerm";
 $password   = "tylerm";
 $dbname     = "slacktrack";
