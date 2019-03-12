@@ -111,10 +111,10 @@ def main():
     ta_url = 'http://catalog.uoregon.edu/arts_sciences/theaterarts/#courseinventory'
     j_url = 'http://catalog.uoregon.edu/journalism_comm/journalism/#courseinventory'
     
-    scraper(cis_url, 'cis')    
-    scraper(philo_url, 'philo')
-    scraper(ta_url, 'ta')
-    scraper(j_url, 'j')
+    scraper(cis_url, 'CIS')    
+    scraper(philo_url, 'PHILO')
+    scraper(ta_url, 'TA')
+    scraper(j_url, 'J')
 
 
 

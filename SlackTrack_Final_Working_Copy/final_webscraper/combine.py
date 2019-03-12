@@ -83,10 +83,10 @@ def main():
     ta_url = 'http://catalog.uoregon.edu/arts_sciences/theaterarts/#courseinventory'
     j_url = 'http://catalog.uoregon.edu/journalism_comm/journalism/#courseinventory'
     
-    final_file('cis')    
-    final_file('philo')
-    final_file('ta')
-    final_file('j')
+    final_file('CIS')    
+    final_file('PHILO')
+    final_file('TA')
+    final_file('J')
 
 
 
