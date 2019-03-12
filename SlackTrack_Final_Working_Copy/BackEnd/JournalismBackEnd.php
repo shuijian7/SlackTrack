@@ -34,7 +34,7 @@ if (isset($_GET['data'])){
  try{
 //The below is a SQL query that selects everything from the Journalism table housed in the SlackTrack database whose course number 
 //matches the one originally passed to this file which was stored at the $course variable. 
-  $sql = "SELECT * FROM Journalism where NUMBER= $course ORDER BY A DESC;";
+  $sql = "SELECT * FROM Journalism where NUMBER= $course ORDER BY (AM+A+AP)/TOT_NON_W DESC;";
 
 //the connection variable is then combined with our above SQL query in a variable called $statement.
   $statement = $connection->prepare($sql);
