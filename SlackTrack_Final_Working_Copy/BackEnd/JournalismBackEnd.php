@@ -1,4 +1,5 @@
 <!doctype html>
+<?php
 /**
 The purpose of the code below is to handle the back end data queries to the database. It also handles creating
 the table that displays grade information for the desired class within the Journalism major. This page was written by 
