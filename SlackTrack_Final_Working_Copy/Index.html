@@ -1,0 +1,140 @@
+<!--
+  This is the Welcome Page.
+-->
+
+
+<html>
+
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SLACK TRACK</title>
+<!-- <link rel="stylesheet" type="text/css" href="./CSS/Welcome.css"> -->
+
+<style>
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+select {
+  /* margin: 50px; */
+  width: 150px;
+  padding: 5px 5px 5px 5px;
+  font-size: 16px;
+  border: 1px solid white;
+  font-family:Trebuchet MS;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("./image/arrow.png") 96% / 5.5% no-repeat white;
+}
+
+p {
+  border: 0px solid rgb(137, 33, 240);
+  border-radius: 6px;
+  background-color: rgb(83, 96, 102);
+  width: 50%;
+  padding: 5px;
+
+}
+
+
+
+
+</style>
+
+</head>
+
+
+
+<body background="image/WelcomePage.jpg"
+style=" background-repeat:no-repeat ;
+background-size:100% 100%;
+background-attachment: fixed;"
+>
+
+
+  <div class = "topleft">
+<img width= 50% src="image/LOGO.svg" alt="LOGO">
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+
+<div align="center">
+    <p align="center"  style="font-family:Trebuchet MS; 
+    color:white; font-size:80px"> SLACK TRACK </p>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div align = "center" >
+        <select id= "myMajor" style= "width:20%;" >
+          <option value='NNN' disabled selected>Select your major</option>
+          <option value='CIS'>CIS</option>
+          <option value='Journalism'>Journalism</option>
+          <option value='Philosophy'>Philosophy</option>
+          <option value='TheatreArts'>Theatre Arts</option>
+        </select>
+</div>
+
+
+
+<br>
+
+<div align="center">
+
+<input class="SubmitButton" 
+type="button" 
+value="Start!" 
+style="border-radius: 5px;
+                  border: None;
+                  font-family:Trebuchet MS; 
+                  height:35px;width:20%; 
+                  font-size:23px;
+                  color: rgb(255, 255, 255);
+                  background: rgb(83, 96, 102)"
+
+onclick="showPage()"  
+style="font-size:20px; "/>
+
+</div>
+
+
+
+<script>
+function showPage() {
+  var select = document.getElementById('myMajor');
+  var major_option = select.options[select.selectedIndex].value;
+  if (major_option != 'NNN'){
+    window.open("./FrontEnd/"+major_option + ".php");
+  }
+}
+
+
+
+</script> 
+</body>
+
+
+</html>

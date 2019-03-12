@@ -1,0 +1,76 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    /* overflow: hidden; */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    overflow: scroll;
+    background-color: #124734;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px solid #fee123;
+    width: 75%; /* Could be more or less, depending on screen size */
+    height: 75%;
+    border-radius:8px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #fee123;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    /* color: black; */
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #myBtntop {
+    display: none;
+    position: fixed;
+    bottom: 22px;
+    right: 10px;
+    z-index: 49;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    width: 55px;
+    background-color: #124734;
+    color: #fee123;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align:middle;
+  
+  }
+  
+  #myBtntop:hover{
+    background-color: #fee123;
+    color: #124734;
+  }
+
+
+
+ 
