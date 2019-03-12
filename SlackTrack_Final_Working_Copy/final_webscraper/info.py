@@ -14,8 +14,14 @@ https://www.youtube.com/watch?v=XQgXKtPSzUI
 https://stackoverflow.com/questions/5850986/joining-pairs-of-elements-of-a-list-python
 ^^ this was to help join the creidts and information together 
 
+https://stackoverflow.com/questions/50735626/typeerror-list-object-is-not-an-iterator/50735994
+^^ to get rid of iterator error
+
 '''
 def scraper(url, major):
+  '''
+      This is similar to the courses file but now we want the information and amount of credits.
+  '''
     my_url = url 
 
     #opening up conneciton, grabbing the page
@@ -44,6 +50,11 @@ def scraper(url, major):
     plz = []
     #USE APPEND TO GET AN ARRAY INSIDE AN ARRAY AND EXTEND TO PREVENT THAT 
     for container in containers:
+      '''
+          We go into the same container as the courses file and we split at the periods since there
+          are 2 periods where the information we want is actually inside there. Then since we only
+          want the number not the word 'Credits' we get rid of that. 
+      '''
         #print(container)
         #newtext = container.replace("&nbsp", "")
         #print(newtext)
@@ -71,6 +82,9 @@ def scraper(url, major):
         #plz.extend(line.strip('').split('Credits'))
 
     for toop in l1:
+      '''
+          With the line we get rid of the elements we don't need so slice. 
+      '''
         #toop = toop.split('.')
         toop = toop[:1] 
         #print(toop)
@@ -79,6 +93,11 @@ def scraper(url, major):
 
     si = iter(ex)
     for item in si:
+      '''
+          There were iteration errors and found with the link above on stackoverflow
+          that we must turn it into an iterator itself so it can go into the for loop
+          below to write to the file.
+      '''
         values = item+next(si, '')
         redo.append(values)
         #print(values) 
