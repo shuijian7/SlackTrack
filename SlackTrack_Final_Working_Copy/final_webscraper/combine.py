@@ -1,4 +1,10 @@
 def final_file(name):
+    '''
+       This function grabs the txt files that have the courses and then the information
+       and combines them together. It strips all the new lines and then in the for loop
+       indexes into them and combines them. Once it combines them it appends it to an
+       array where then it is all combined.
+    '''
     filename = "final_" +name+"_courses.txt"
     x = open(filename, "w")
                                 
