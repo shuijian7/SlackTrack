@@ -2,7 +2,7 @@ from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 import pickle
 import sys
-
+                        
 '''
 https://stackoverflow.com/questions/17751322/python-2-attributeerror-list-object-has-no-attribute-strip
 ^^ was used to get the strip and split to stop getting attribute error when strip wasn't working

@@ -1,7 +1,7 @@
 def final_file(name):
     filename = "final_" +name+"_courses.txt"
     x = open(filename, "w")
-
+                                
     hold_class = []
     hold_info = []
     final = []

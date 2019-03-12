@@ -2,7 +2,7 @@ from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 import pickle
 import sys
-
+                        
 def scraper(url, major):
     my_url = url 
 
