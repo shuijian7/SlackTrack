@@ -5,7 +5,14 @@ import sys
                         
 def scraper(url, major):
     my_url = url 
-
+  '''
+      Passes in the URL for each major we are going to display along with the name.
+      There are many functions in this file because instead of doing a regular strip
+      to functions and calling them there were a lot more problems since you are 
+      live pulling from the website. Along with that it would affect all the other
+      data and the way it sometimes comes in we have to convert it to different types
+      throughout the process for us to get our final results. 
+  '''
     #opening up conneciton, grabbing the page
 
     data = []
@@ -32,6 +39,10 @@ def scraper(url, major):
     plz = []
 
     for container in containers:
+       ''' 
+          This for loop goes thorugh all the course containers so picks up all the classes where the 
+          courses are stored. Then the variable final indexes into that container and grabs the course text.
+       '''
         #print(container)
         #newtext = container.replace("&nbsp", "")
         #print(newtext)
@@ -42,6 +53,11 @@ def scraper(url, major):
         ####print(final)
         ex.append(final)
         for line in final:
+          '''
+              This takes final and extends to the list l1 (where it won't make it an array)
+              and will get rid of the &nbsp which is a non breaking space in the HTML
+              where it wouldn't originally let you strip. 
+          '''
             #course = line[0]
             #print(course)
             #num = line[1]
@@ -70,6 +86,9 @@ def scraper(url, major):
         #l1.extend(line.strip('').split('\xa0'))
     #print(l1)
     def classInfo():
+       '''
+          This gets the specific part of the string
+       '''
         #once get it ust write it an call this function after the for toop in ex
         for info in ex:
             info = info[3:7]
@@ -77,6 +96,11 @@ def scraper(url, major):
             
     #print(ex)
     for toop in ex:
+      '''
+         For each item in ex where ex has the original final variable string
+         it will slice off everything we don't need since we just want
+         the courses
+      '''
         toop = toop[:1]
         #toop = toop[:7]
         #print(toop) 
@@ -86,9 +110,15 @@ def scraper(url, major):
         ###redo.extend(toop.strip('').split('\xa0'))
         #print(toop)
     for thing in redo:
+      '''
+         The &nbsp in binary is \xa0 so we need to remove that
+      '''
         plz.append(thing.strip('').split('\xa0'))
 
     for item in plz:
+      '''
+         Write the final result to the file
+      '''
         f.write("%s\n" % item)   
     print(plz)
     #print(ex)
