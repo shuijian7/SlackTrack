@@ -2,8 +2,8 @@
 
 /**
  * Configuration for database connection
- * This file is written by Shuijian Zhang and it's a temporary database for DBTest since the actual databse we used has a private key that I can't visit. 
- * he DB informations as column name and key is same with the actual DB, see in sqlcreate.txt.
+ * This file is written by Shuijian Zhang and it's a database configuration for DBTest  
+ * The informations for test table are in sqlcreate.txt.
  */
 
 $host       = "ix.cs.uoregon.edu";

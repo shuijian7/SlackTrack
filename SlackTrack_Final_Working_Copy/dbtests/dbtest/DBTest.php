@@ -1,12 +1,13 @@
 <!-- 
     This file is Database test file for testing database connection and differnet querys work.
-    This file is written by Shuijian Zhang and Jarvis Dong
+    This file is written by Shuijian Zhang
     FrameWork is phpunit
 
-    Notice: xml query file testsquery can't comment since it'll cause error when testing.
+    Notice: xml query and composer.json file can't comment since json can't supprt comments and it'll cause error when testing.
     so comments here:
     testsquery is a import query file for getDataSet() function
-    testsqury is written by Shuijian Zhang and Jarvis Dong
+    composer.json file is a installing version for PHPUnit and DBUnit
+    All the files above are written by Shuijian Zhang
 -->
 
 <?php
