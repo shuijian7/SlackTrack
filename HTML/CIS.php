@@ -64,7 +64,7 @@ Last Updated: Jarvis Dong March 6th 2019, Wed 15:26 -->
 		<div id="myModal" class="modal">
 		<div class="modal-content">
 			<span class="close">&times;</span>
-			<p id="cid" style="color: white">    </p>
+			<h1 id="cid" style="color: white">    </h1>
 			
 
 			<div id="txtHint"><b>Table info will be listed here...</b></div>
@@ -97,7 +97,7 @@ Last Updated: Jarvis Dong March 6th 2019, Wed 15:26 -->
 
 
 		
-
+        <span style="margin: 7%"> * Highlighted row is clickable </span>
 		<!-- BS First Year Table -->
 		<table class="greenTable">
 			<thead>
@@ -520,8 +520,11 @@ Last Updated: Jarvis Dong March 6th 2019, Wed 15:26 -->
 			</tbody>
 				</table>
 
+            <br>
+			<br>
+			<br>
 
-
+            <button onclick="topFunction()" id="myBtntop" title="Go to top">Top</button>
 			<script type="text/javascript" src="../js/jquery.js"></script>
 			<script type="text/javascript" src="../js/Popup.js" ></script>
 </body>
