@@ -262,7 +262,7 @@ if (isset($_GET['data'])){
 }
 
  try{
-  $sql = "SELECT * FROM """+db_table_name+""" where NUMBER= $course ORDER BY A DESC;";
+  $sql = "SELECT * FROM """+db_table_name+""" where NUMBER= $course ORDER BY (AM+A+AP)/TOT_NON_W DESC;";
 
   $statement = $connection->prepare($sql);
   $statement->execute();
