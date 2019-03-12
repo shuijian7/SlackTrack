@@ -1,0 +1,101 @@
+This file was written by Shuijian Zhang.
+It's informations for  DB
+
+
+
+CREATE TABLE `CIS` (
+  `SUBJECT` text,
+  `NUMBER` double DEFAULT NULL,
+  `INSTRUCTOR` text,
+  `AP` double DEFAULT NULL,
+  `A` double DEFAULT NULL,
+  `AM` double DEFAULT NULL,
+  `BP` double DEFAULT NULL,
+  `B` double DEFAULT NULL,
+  `BM` double DEFAULT NULL,
+  `CP` double DEFAULT NULL,
+  `C` double DEFAULT NULL,
+  `CM` double DEFAULT NULL,
+  `DP` double DEFAULT NULL,
+  `D` double DEFAULT NULL,
+  `DM` double DEFAULT NULL,
+  `F` double DEFAULT NULL,
+  `P` double DEFAULT NULL,
+  `N` double DEFAULT NULL,
+  `OTHER` double DEFAULT NULL,
+  `W` double DEFAULT NULL,
+  `TOT_NON_W` double DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+
+CREATE TABLE `Theater` (
+  `SUBJECT` text,
+  `NUMBER` double DEFAULT NULL,
+  `INSTRUCTOR` text,
+  `AP` double DEFAULT NULL,
+  `A` double DEFAULT NULL,
+  `AM` double DEFAULT NULL,
+  `BP` double DEFAULT NULL,
+  `B` double DEFAULT NULL,
+  `BM` double DEFAULT NULL,
+  `CP` double DEFAULT NULL,
+  `C` double DEFAULT NULL,
+  `CM` double DEFAULT NULL,
+  `DP` double DEFAULT NULL,
+  `D` double DEFAULT NULL,
+  `DM` double DEFAULT NULL,
+  `F` double DEFAULT NULL,
+  `P` double DEFAULT NULL,
+  `N` double DEFAULT NULL,
+  `OTHER` double DEFAULT NULL,
+  `W` double DEFAULT NULL,
+  `TOT_NON_W` double DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+CREATE TABLE `Philosophy` (
+  `SUBJECT` text,
+  `NUMBER` double DEFAULT NULL,
+  `INSTRUCTOR` text,
+  `AP` double DEFAULT NULL,
+  `A` double DEFAULT NULL,
+  `AM` double DEFAULT NULL,
+  `BP` double DEFAULT NULL,
+  `B` double DEFAULT NULL,
+  `BM` double DEFAULT NULL,
+  `CP` double DEFAULT NULL,
+  `C` double DEFAULT NULL,
+  `CM` double DEFAULT NULL,
+  `DP` double DEFAULT NULL,
+  `D` double DEFAULT NULL,
+  `DM` double DEFAULT NULL,
+  `F` double DEFAULT NULL,
+  `P` double DEFAULT NULL,
+  `N` double DEFAULT NULL,
+  `OTHER` double DEFAULT NULL,
+  `W` double DEFAULT NULL,
+  `TOT_NON_W` double DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+CREATE TABLE `Journalism` (
+  `SUBJECT` text,
+  `NUMBER` double DEFAULT NULL,
+  `INSTRUCTOR` text,
+  `AP` double DEFAULT NULL,
+  `A` double DEFAULT NULL,
+  `AM` double DEFAULT NULL,
+  `BP` double DEFAULT NULL,
+  `B` double DEFAULT NULL,
+  `BM` double DEFAULT NULL,
+  `CP` double DEFAULT NULL,
+  `C` double DEFAULT NULL,
+  `CM` double DEFAULT NULL,
+  `DP` double DEFAULT NULL,
+  `D` double DEFAULT NULL,
+  `DM` double DEFAULT NULL,
+  `F` double DEFAULT NULL,
+  `P` double DEFAULT NULL,
+  `N` double DEFAULT NULL,
+  `OTHER` double DEFAULT NULL,
+  `W` double DEFAULT NULL,
+  `TOT_NON_W` double DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

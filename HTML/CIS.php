@@ -154,43 +154,43 @@ Last Updated: Jarvis Dong March 6th 2019, Wed 15:26 -->
 			<td style="font-size: 17px"></td>
 			<td style="font-size: 17px">Credits</td>
 			</tr>
-			<tr>
+			<tr role="button" id="Btn313" class="u" style="cursor: pointer">
 				<td style="text-align:left">CIS 313</td>
 				<td style="text-align:left">Intermediate Data Structures</td>
 				<td style="text-align:left"></td>
 				<td>4</td>
 			</tr>
-			<tr>
+			<tr role="button" id="Btn314" class="u" style="cursor: pointer">
 				<td style="text-align:left">CIS 314</td>
 				<td style="text-align:left">Computer Organization</td>
 				<td style="text-align:left"></td>
 				<td>4</td>
 			</tr>
-			<tr>
+			<tr role="button" id="Btn315" class="u" style="cursor: pointer">
 				<td style="text-align:left">CIS 315</td>
 				<td style="text-align:left">Intermediate Algorithms</td>
 				<td></td>
 				<td>4</td>
 			</tr>
-			<tr>
+			<tr role="button" id="Btn330" class="u" style="cursor: pointer">
 				<td style="text-align:left">CIS 330</td>
 				<td style="text-align:left">C/C++ and Unix</td>
 				<td></td>
 				<td>4</td>
 			</tr>
-			<tr>
+			<tr role="button" id="Btn415" class="u" style="cursor: pointer">
 				<td style="text-align:left">CIS 415</td>
 				<td style="text-align:left">Operating Systems</td>
 				<td></td>
 				<td>4</td>
 			</tr>
-			<tr>
+			<tr role="button" id="Btn422" class="u" style="cursor: pointer">
 				<td style="text-align:left">CIS 422</td>
 				<td style="text-align:left">Software Methodology I</td>
 				<td></td>
 				<td>4</td>
 			</tr>
-			<tr>
+			<tr role="button" id="Btn425" class="u" style="cursor: pointer">
 				<td style="text-align:left">CIS 425</td>
 				<td style="text-align:left">Principles of Programming Languages</td>
 				<td></td>

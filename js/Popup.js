@@ -14,6 +14,174 @@ var span = document.getElementsByClassName("close")[0];
 
 
 // When the user clicks the button, open the modal 
+Btn425.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "Hello!! CIS313";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=425",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+Btn422.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "Hello!! CIS313";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=422",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+Btn415.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "Hello!! CIS313";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=415",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+Btn330.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "Hello!! CIS313";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=330",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+Btn315.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "Hello!! CIS313";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=315",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+Btn314.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "Hello!! CIS313";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=314",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
+Btn313.onclick = function() {
+
+  modal.style.display = "block";
+  // document.getElementById('myMajor').innerHTML= "";
+  document.getElementById('cid').innerHTML= "Hello!! CIS313";
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","../SlackTrackBackendTableCreator/C.php?data=313",true);
+        xmlhttp.send();
+  
+  document.body.style.overflow = 'hidden';
+
+}
+
 Btn210.onclick = function() {
 
   modal.style.display = "block";
