@@ -10,7 +10,6 @@ which is then used to query the database for grade information on that specific 
 HTML table which is passed back to the JournalismPopup.js file to then be displayed in the Journalism.php page in the front end folder.
  *
  */
-<?php
 //Makes call to config.php which houses the variables to connect to the database
 require "config.php";
 //Makes calls to common.php and imports code to this location
