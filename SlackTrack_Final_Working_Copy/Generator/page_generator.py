@@ -1,11 +1,21 @@
 import os
 import ast
 from datetime import date
-# def page_generator(inputfilepath), outputHTMLfile = "default_generator_ouput.HTML", outputPHPfile = "default_generator_ouput.PHP",db_table_name):
-def page_generator(inputfile, db_table_name, major_name,FrontEndFolderPath, BackEndFolderPath, jsFolderPath):
 
+#The page_generator function generates PHP pages for University of Oregon Majors. It uses webscraped data to automatically generate
+#a front end webpage, a javascript file and a backend for a specific major which then can be edited to match the major's requirements.
+#The parameters are as follows:
+#inputfile: The webscraper data that is housed in the final_webscraper folder. The data is housed in a .txt file.
+#db_table_name: the name of the table in the database.
+#major_name: the name of the major
+#FrontEndFolderPath: The path from this file to the Front End folder
+#BackEndFolderPath:The path from this file to the Back End folder
+#jsFolderPath:The path from this file to the js folder
+def page_generator(inputfile, db_table_name, major_name,FrontEndFolderPath, BackEndFolderPath, jsFolderPath):
+#gets the date of the current day and converts it to string.
 	Date= str(date.today())
 	runjs = 0
+#creates the top of the front end page along with the current date that is added to the top of the page. 
 	TopOfFrontEnd="""
 <!-- HTML file for """+major_name+""" major page
 This page was originally created using the page_generator python function written for
@@ -82,12 +92,15 @@ the SlackTrack Application by group member Tyler Millan. Page was initially crea
 				<td style="font-size: 17px">Credits</td>
 			</tr>
 	"""
+#checks if the javascript page already exists, if so it will not create a new one as this could 
+#possibly overwrite one that has been formatted
 	if os.path.exists(jsFolderPath+major_name+"Popup.js"):
 		print("ERROR: Javascript file already exists for the specified major")
 	else:	
 		runjs=1
 
 		print("Javascript file created at "+jsFolderPath+major_name+"Popup.js")
+		#creates the top of the javascript page
 		TopOfjsfile = """
 
 // Get the modal
@@ -135,26 +148,33 @@ function topFunction() {
 
 
 		"""
+		#creates the new javascript page
 		jsFileLocation = open(jsFolderPath+major_name+"Popup.js",'w+')
+		#writes the top of the javascript file
 		jsFileLocation.write(TopOfjsfile)
+		#closes the newly created javascript page
 		jsFileLocation.close
 
 
 
-
+#checks if the front end page already exists, if so it will not create a new one as this could 
+#possibly overwrite one that has been formatted
 	if os.path.exists(FrontEndFolderPath+major_name+".php"):
 		print("ERROR: Front End file already exists for the specified major")
 	else:
+		#creates the new front end page
 		FrontEndFileLocation = open(FrontEndFolderPath+major_name+".php", 'w+')
+		#writes the top of the new front end page
 		FrontEndFileLocation.write(TopOfFrontEnd)
+		#closes the newly created front end page
 		FrontEndFileLocation.close()
 
 		print("Front End file created at "+FrontEndFolderPath+major_name+".php")
 
 
-
+		#opens the webscraped data page
 		with open(inputfile) as fp:
-
+			#iterates through each lines of the web scraped data page which is a array containing class info
 			for line in fp:
 				line = line.replace("][",",")
 				line = ast.literal_eval(line)
@@ -196,8 +216,11 @@ Btn"""+line[0]+line[1]+"""onclick = function() {
 """
 
 				if (runjs==1):
+					#opens the newly created javascript page
 					jsFileLocation = open(jsFolderPath+major_name+"Popup.js", 'a')
+					#appends to the javascript page
 					jsFileLocation.write(jsButton)
+					#closes the javascript page
 					jsFileLocation.close()
 
 
@@ -328,11 +351,17 @@ function percent($number){
 </body>
 </html>
 	"""
+	
+#checks if the back end page already exists, if so it will not create a new one as this could 
+#possibly overwrite one that has been formatted
 	if os.path.exists(BackEndFolderPath+major_name+"BackEnd"+".php"):
 		print("ERROR: Back End file already exists enter, enter a Back End file name that does not already exist")
 	else:
+		#creates the new back end page
 		BackEndFileLocation = open(BackEndFolderPath+major_name+"BackEnd"+".php", 'w+')
+		#writes the new back end page
 		BackEndFileLocation.write(BackEnd)
+		#closes the newly created backend page
 		BackEndFileLocation.close
 
 		print("Back End file created at "+BackEndFolderPath+major_name+"BackEnd"+".php")
@@ -340,17 +369,17 @@ function percent($number){
 
 
 def main():
-	filepath = "../final_webscrape/final_j_courses.txt"
-	db_table_name = "Journalism"
-	major_name = "Journalism"
-	FrontEndFolderPath = "../FrontEnd/"
-	jsFolderPath = "../js/"
-	BackEndFolderPath = "../BackEnd/"
-
-	if not os.path.isfile(filepath):
-		print("File path {} does not exist. Exiting...".format(filepath))
-		sys.exit()
-
+#The six variables below are what are input to run the page generator, and are currently set to run for journalism.
+#Since the journalism page has already been created it will output an error saying that those pages have already been found.
+#If desired, delete the journalism.php in the Front End folder, the JournalismBackEnd.php file in the Back End folder, and the 
+#JournalismPopup.js file and uncomment the below to test this function.
+	
+# 	filepath = "../final_webscraper/final_j_courses.txt"
+# 	db_table_name = "Journalism"
+# 	major_name = "Journalism"
+# 	FrontEndFolderPath = "../FrontEnd/"
+# 	jsFolderPath = "../js/"
+# 	BackEndFolderPath = "../BackEnd/"
 	page_generator(filepath,db_table_name, major_name,FrontEndFolderPath, BackEndFolderPath,jsFolderPath)
 
 
