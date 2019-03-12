@@ -371,15 +371,15 @@ function percent($number){
 def main():
 #The six variables below are what are input to run the page generator, and are currently set to run for journalism.
 #Since the journalism page has already been created it will output an error saying that those pages have already been found.
-#If desired, delete the journalism.php in the Front End folder, the JournalismBackEnd.php file in the Back End folder, and the 
-#JournalismPopup.js file and uncomment the below to test this function.
+
 	
-# 	filepath = "../final_webscraper/final_j_courses.txt"
-# 	db_table_name = "Journalism"
-# 	major_name = "Journalism"
-# 	FrontEndFolderPath = "../FrontEnd/"
-# 	jsFolderPath = "../js/"
-# 	BackEndFolderPath = "../BackEnd/"
+	filepath = "../final_webscraper/final_j_courses.txt"
+	db_table_name = "Journalism"
+	major_name = "Journalism"
+	FrontEndFolderPath = "../FrontEnd/"
+	jsFolderPath = "../js/"
+	BackEndFolderPath = "../BackEnd/"
+	
 	page_generator(filepath,db_table_name, major_name,FrontEndFolderPath, BackEndFolderPath,jsFolderPath)
 
 
