@@ -20,6 +20,7 @@ and offers a user-friendly interface that is higher integrated and more efficien
 - Tyler Green
 - Shuijian Zhang
 - Jarvis Dong
+- Claire Phillips
 
 ### Todo List
 
