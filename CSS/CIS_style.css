@@ -1,5 +1,5 @@
 /* CSS file for CIS.html
-Author: Jarvis Dong 
+Author: Jarvis Dong & Will Lin 
 Initial Created on Feb 25th 00:30 AM by Jarvis Dong
 
 This file is meant to embellish tables on CIS.html
@@ -8,6 +8,7 @@ Last Updated: Jarvis Dong Feb 25th 9:16 AM */
 
 
 
+/**/
 table.greenTable {
     font-family: Arial, serif;
     border: 6px solid #124734;
@@ -30,9 +31,6 @@ table.greenTable {
   }
   table.greenTable thead {
     background: #124734;
-    /* background: -moz-linear-gradient(top, #5baf6b 0%, #3a9e4d 0%, #24943A 100%);
-    background: -webkit-linear-gradient(top, #5baf6b 0%, #3a9e4d 0%, #24943A 100%);
-    background: linear-gradient(to bottom, #5baf6b 0%, #3a9e4d 0%, #24943A 100%); */
     border: 0px solid #124734;
   }
   table.greenTable thead th {
@@ -52,9 +50,6 @@ table.greenTable {
     font-weight: bold;
     color: #F0F0F0;
     background: #124734;
-    /* background: -moz-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
-    background: -webkit-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
-    background: linear-gradient(to bottom, #5baf6b 0%, #3a9e4d 66%, #24943A 100%); */
     border-top: 1px solid #124734;
   }
   table.greenTable tfoot td {

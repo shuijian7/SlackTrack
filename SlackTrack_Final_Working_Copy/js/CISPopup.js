@@ -1,3 +1,7 @@
+//All the written by Will Lin.
+//This file is used for opening the corresponding course modal of CIS major
+//and implementing button function
+
 
 
 // Get the modal
@@ -22,32 +26,34 @@ window.onclick = function(event) {
 }
 
 
-//jump Button functions 
+//Backtotop Button functions 
 window.onscroll = function() {scrollFunction()};
             
 function scrollFunction() {
   
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //show the button on the web page
     document.getElementById("myBtntop").style.display = "block";
     
-    } else {
+    } else {//make button disappear
     document.getElementById("myBtntop").style.display = "none";
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// When the user clicks on the button, scroll to the top of the page document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    // var elmnt = document.getElementById("123abc");
-    // elmnt.scrollIntoView();
 }
 
-
-		
+//when users click the highlighted row, the following function would be executed.
+//The fucntion is to pass data to php files of backend, end pull the table data to the modal by using Ajax(supported by JQuery)
 BtnCIS105.onclick = function() {
-
+  
+  //show the modal to screen
   modal.style.display = "block";
+ 
+  //get the element id of modal and replace the course title and number
   document.getElementById('cid').innerHTML="CIS105";
         if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -61,12 +67,22 @@ BtnCIS105.onclick = function() {
                 document.getElementById("txtHint").innerHTML = this.responseText;
             }
         };
+        //get the table data of corresonding course from backend
         xmlhttp.open("GET","../BackEnd/CISBackEnd.php?data=105",true);
         xmlhttp.send();
   
+  //forbid scroll down and up on document body 
   document.body.style.overflow = 'hidden';
+  
 
 }
+
+//IMPORTANT:
+//Rest course functions are repeating. All of them are using ajax to pass the particualr 
+//course title and numebr to backend and pull up letter grade data. so the comments are same.
+
+
+
 
 BtnCIS110.onclick = function() {
 

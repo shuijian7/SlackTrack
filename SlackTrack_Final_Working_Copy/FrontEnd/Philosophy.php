@@ -1,3 +1,11 @@
+<!--Fornt page template was written by Jarvis Dong & Will Lin. 
+Reponsibiliies:
+Jarvis Dong: Initial table creation and css classes for table. 
+Will Lin: Buttons creation and functions implementation, table optimization, page decoration.
+Tyler Millan uses page generator (input page template) to generate other course tables with same funcionalities. -->
+
+
+
 
 <!-- HTML file for Philosophy major page
 This page was originally created using the page_generator python function written for
@@ -8,12 +16,15 @@ the SlackTrack Application by group member Tyler Millan. Page was initially crea
 <html>
 <head>
 		<meta charset="utf-8" />
+		<!--browser compatibility-->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Philosophy</title>
+		<!--JS file references for poupup window and table-->
 		<link rel="stylesheet" type="text/css" href="../CSS/CIS_style.css">
 		<link rel="stylesheet" type="text/css" href="../CSS/Popup.css">
 		<style>
+		/*decoration for green bar on the page top*/
 			body {margin:0;}
 			.navbar{
 				overflow: hidden;
@@ -35,14 +46,14 @@ the SlackTrack Application by group member Tyler Millan. Page was initially crea
 
 <body>
 		<div class = "navbar">
+		<!--Logo comes from https://communications.uoregon.edu/brand/logo-system-->
 		<a href="../Index.html"><img src="../image/mainLOGO.svg" height= 60px; title="Logo" alt="mainLOGO"></a>
 		<div align="right" style="margin-right: 2%; margin-bottom: 10px;">
 			<b style="color:#fee123">Designed by CIS422 Group 7</b></div>
 		</div>
 		<h1 style="margin-left: 7%">Philosophy</h1>
 
-		<!--Modal-->
-		<!-- The Modal -->
+		<!--Modal template shared by each course-->
 		<div id="myModal" class="modal">
 		<div class="modal-content">
 			<span class="close">&times;</span>
@@ -52,8 +63,8 @@ the SlackTrack Application by group member Tyler Millan. Page was initially crea
 			<div id="txtHint"><b>Table info loading...</b></div>
 		</div>
 		</div>
-
-		
+   
+		<!--notice sentence-->
         <span style="margin: 7%"> * Highlighted row is clickable </span>
 		<!-- BS First Year Table -->
 		<table class="greenTable">
@@ -666,7 +677,9 @@ the SlackTrack Application by group member Tyler Millan. Page was initially crea
 			<br>
 			<br>
 
+			<!--Backtotop button-->
             <button onclick="topFunction()" id="myBtntop" title="Go to top">Top</button>
+			<!--Reference of JQuery, comes from: https://jquery.com/download/-->
 			<script type="text/javascript" src="../js/jquery.js"></script>
 			<script type="text/javascript" src="../js/PhilosophyPopup.js" ></script>
 </body>

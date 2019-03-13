@@ -1,5 +1,6 @@
 <!--
-  This is the Welcome Page.
+  This file is written by Will Lin. 
+  This is the Welcome Page of our system, uses could start to select major and open the major page. 
 -->
 
 
@@ -8,11 +9,13 @@
 
 <head>
 <meta charset="utf-8" />
+<!--set up browser compatibility--> 
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>SLACK TRACK</title>
+<title>SLACK TRACK</title> 
 <!-- <link rel="stylesheet" type="text/css" href="./CSS/Welcome.css"> -->
 
+<!--set up the css style of name 'SLACK TRACK' and selection box -->
 <style>
 
 .topleft {
@@ -52,13 +55,15 @@ p {
 </head>
 
 
-
+<!--background pic comes from: https://unsplash.com-->
 <body background="image/WelcomePage.jpg"
 style=" background-repeat:no-repeat ;
 background-size:100% 100%;
 background-attachment: fixed;"
 >
 
+
+<!--Logo svg file comes from: https://communications.uoregon.edu/brand/logo-system -->
 
   <div class = "topleft">
 <img width= 50% src="image/LOGO.svg" alt="LOGO">
@@ -70,7 +75,7 @@ background-attachment: fixed;"
 
 
 
-
+<!--set up project name in the center-->
 <div align="center">
     <p align="center"  style="font-family:Trebuchet MS; 
     color:white; font-size:80px"> SLACK TRACK </p>
@@ -87,7 +92,7 @@ background-attachment: fixed;"
 <br>
 
 
-
+<!--set up selection box element for four majors -->
 <div align = "center" >
         <select id= "myMajor" style= "width:20%;" >
           <option value='NNN' disabled selected>Select your major</option>
@@ -102,6 +107,7 @@ background-attachment: fixed;"
 
 <br>
 
+<!--Set up button for openning major page -->
 <div align="center">
 
 <input class="SubmitButton" 
@@ -116,18 +122,19 @@ style="border-radius: 5px;
                   background: rgb(83, 96, 102)"
 
 onclick="showPage()"  
-style="font-size:20px; "/>
+style="font-size:20px; "/> <!--onclick will call function showPage()-->
 
 </div>
 
 
 
+<!--JS code for opening the corresponding major page that the user select from selection box-->
 <script>
 function showPage() {
-  var select = document.getElementById('myMajor');
+  var select = document.getElementById('myMajor'); // get major id 
   var major_option = select.options[select.selectedIndex].value;
   if (major_option != 'NNN'){
-    window.open("./FrontEnd/"+major_option + ".php");
+    window.open("./FrontEnd/"+major_option + ".php"); //open the major page window
   }
 }
 

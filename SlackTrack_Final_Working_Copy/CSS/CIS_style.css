@@ -1,13 +1,13 @@
 /* CSS file for CIS.html
-Author: Jarvis Dong 
+Author: Jarvis Dong & Will Lin
 Initial Created on Feb 25th 00:30 AM by Jarvis Dong
 
 This file is meant to embellish tables on CIS.html
 
-Last Updated: Jarvis Dong Feb 25th 9:16 AM */
+*/
 
 
-
+/*Author of all table classes: Jarvis Dong, setup basic table template*/
 table.greenTable {
     font-family: Arial, serif;
     border: 6px solid #124734;
@@ -20,6 +20,7 @@ table.greenTable {
     box-align: center;
     margin: 0px auto;
   }
+  /*padding for each cell */
   table.greenTable td, table.greenTable th {
     /* border: 1px solid #24943A; */
     padding: 6px 10px 10px;
@@ -30,11 +31,9 @@ table.greenTable {
   }
   table.greenTable thead {
     background: #124734;
-    /* background: -moz-linear-gradient(top, #5baf6b 0%, #3a9e4d 0%, #24943A 100%);
-    background: -webkit-linear-gradient(top, #5baf6b 0%, #3a9e4d 0%, #24943A 100%);
-    background: linear-gradient(to bottom, #5baf6b 0%, #3a9e4d 0%, #24943A 100%); */
     border: 0px solid #124734;
   }
+  /*thead background color */
   table.greenTable thead th {
     font-size: 19px;
     font-weight: bold;
@@ -52,11 +51,11 @@ table.greenTable {
     font-weight: bold;
     color: #F0F0F0;
     background: #124734;
-    /* background: -moz-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
-    background: -webkit-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
-    background: linear-gradient(to bottom, #5baf6b 0%, #3a9e4d 66%, #24943A 100%); */
     border-top: 1px solid #124734;
   }
+
+  
+  /*footer classes*/
   table.greenTable tfoot td {
     font-size: 13px;
   }
@@ -70,6 +69,8 @@ table.greenTable {
     padding: 2px 8px;
     border-radius: 5px;
   }
+
+  /*Author: Will Lin, when hover on the table row, the backgound color would turn to be yellow to notice users*/
   .u:hover{
     /* text-decoration: underline; */
     background-color:#fee123;
